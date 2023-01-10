@@ -277,4 +277,31 @@ header .inner .rightUtil .lang {
   position: relative;
   margin-left: 16px;
   margin-top: -2px;
+  cursor: pointer;
+}
+header .inner .rightUtil .lang ul {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 99;
+}
+header .inner .rightUtil .lang ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 122px;
+  height: 39px;
+  border: solid 1px #dedede;
+  background-color: #fff;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #8f9094;
+}
+header .inner .rightUtil .lang ul li a:hover {
+  color: #000;
+  font-weight: 600;
+}
+header .inner .rightUtil .lang ul li.active a {
+  color: #000;
+  font-weight: 600;
 }
