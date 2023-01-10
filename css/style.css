@@ -7,7 +7,7 @@
 }
 
 body {
-  padding-top: 143px;
+  padding-top: 140px;
 }
 
 .scrollBar {
@@ -467,6 +467,285 @@ header .inner .rightUtil .moGnbMenu ul.moGnb > li ul li a {
   color: #fff;
 }
 
-main {
-  padding-bottom: 1000px;
+main .mainSliderContainer {
+  background-color: rgba(0, 0, 0, 0.03);
+  padding: 40px 0 25px;
+  overflow: hidden;
+}
+@media (max-width: 1075px) {
+  main .mainSliderContainer {
+    padding: 24px 0;
+    background-color: #fff;
+  }
+}
+@media (max-width: 767px) {
+  main .mainSliderContainer {
+    padding: 0;
+  }
+}
+main .mainSliderContainer .swiperContainer {
+  max-width: 1194px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  box-sizing: content-box;
+}
+@media (max-width: 767px) {
+  main .mainSliderContainer .swiperContainer {
+    padding: 0;
+  }
+}
+main .mainSliderContainer .swiperContainer .swiper {
+  width: 100%;
+  height: 100%;
+}
+main .mainSliderContainer .swiperContainer .swiper .swiper-slide {
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .mainSliderContainer .swiperContainer .swiper .swiper-slide .contentWrap {
+  display: flex;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  main .mainSliderContainer .swiperContainer .swiper .swiper-slide .contentWrap {
+    flex-direction: column;
+  }
+}
+main .mainSliderContainer .swiperContainer .swiper .swiper-slide .contentWrap .imgWrap {
+  width: 67.5%;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  main .mainSliderContainer .swiperContainer .swiper .swiper-slide .contentWrap .imgWrap {
+    width: 100%;
+  }
+}
+main .mainSliderContainer .swiperContainer .swiper .swiper-slide .contentWrap .imgWrap img {
+  width: 100%;
+  height: 100%;
+}
+main .mainSliderContainer .swiperContainer .swiper .swiper-slide .contentWrap .textWrap {
+  color: #fff;
+  background-color: #4747b3;
+  width: 32.5%;
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .mainSliderContainer .swiperContainer .swiper .swiper-slide .contentWrap .textWrap.press {
+  background-color: #4d4e52;
+}
+@media (max-width: 1075px) {
+  main .mainSliderContainer .swiperContainer .swiper .swiper-slide .contentWrap .textWrap {
+    padding: 31px 24px;
+  }
+}
+@media (max-width: 767px) {
+  main .mainSliderContainer .swiperContainer .swiper .swiper-slide .contentWrap .textWrap {
+    width: 100%;
+    padding: 24px 24px 40px;
+  }
+}
+main .mainSliderContainer .swiperContainer .swiper .swiper-slide .contentWrap .textWrap .textContainer .progress {
+  line-height: 1.5;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 14px;
+  position: relative;
+  margin-bottom: 24px;
+}
+main .mainSliderContainer .swiperContainer .swiper .swiper-slide .contentWrap .textWrap .textContainer .progress span.progressBar {
+  max-width: 100%;
+  overflow: hidden;
+  height: 4px;
+  background: #fff;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+@media (max-width: 1075px) {
+  main .mainSliderContainer .swiperContainer .swiper .swiper-slide .contentWrap .textWrap .textContainer .progress span.progressBar {
+    height: 3px;
+    bottom: -3px;
+  }
+}
+@media (max-width: 767px) {
+  main .mainSliderContainer .swiperContainer .swiper .swiper-slide .contentWrap .textWrap .textContainer .progress span.progressBar {
+    bottom: 0;
+  }
+}
+main .mainSliderContainer .swiperContainer .swiper .swiper-slide .contentWrap .textWrap .textContainer .progress span.progressBar.pro-ani {
+  -webkit-animation: progressBar 7s linear;
+          animation: progressBar 7s linear;
+}
+@-webkit-keyframes progressBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes progressBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+main .mainSliderContainer .swiperContainer .swiper .swiper-slide .contentWrap .textWrap .textContainer > a h2 {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.46;
+  color: #fff;
+  margin-bottom: 26px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+@media (max-width: 1250px) {
+  main .mainSliderContainer .swiperContainer .swiper .swiper-slide .contentWrap .textWrap .textContainer > a h2 {
+    font-size: 2vw;
+    margin-bottom: 1.7vw;
+    -webkit-line-clamp: 2;
+  }
+}
+@media (max-width: 767px) {
+  main .mainSliderContainer .swiperContainer .swiper .swiper-slide .contentWrap .textWrap .textContainer > a h2 {
+    font-size: 17px;
+    -webkit-line-clamp: 2;
+    margin-bottom: 22px;
+    height: 49px;
+  }
+}
+main .mainSliderContainer .swiperContainer .swiper .swiper-slide .contentWrap .textWrap .textContainer p.subText {
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.65);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+@media (max-width: 1250px) {
+  main .mainSliderContainer .swiperContainer .swiper .swiper-slide .contentWrap .textWrap .textContainer p.subText {
+    font-size: 14px;
+    max-height: 65px;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+  }
+}
+@media (max-width: 767px) {
+  main .mainSliderContainer .swiperContainer .swiper .swiper-slide .contentWrap .textWrap .textContainer p.subText {
+    margin-bottom: 28px;
+  }
+}
+main .mainSliderContainer .swiperContainer .swiper .swiper-slide .contentWrap .textWrap a.btn-detail {
+  color: #4747b3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 136px;
+  height: 40px;
+  background-color: #f5f5fa;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+  text-align: center;
+  margin-top: 10px;
+}
+@media (max-width: 767px) {
+  main .mainSliderContainer .swiperContainer .swiper .swiper-slide .contentWrap .textWrap a.btn-detail {
+    width: 100%;
+    height: 46px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.57;
+    text-align: center;
+    margin-top: 0;
+  }
+}
+main .mainSliderContainer .swiperContainer .swiper .swiper-slide .contentWrap .textWrap a.btn-detail.press {
+  color: #4d4e52;
+}
+main .mainSliderContainer .swiperContainer .swiper .swiper-slide .contentWrap .textWrap a.btn-detail:hover {
+  box-shadow: 1px 2px 13px rgba(0, 0, 0, 0.37);
+}
+main .mainSliderContainer .swiperContainer .swiper .swiper-slide .contentWrap .textWrap a.btn-detail:hover i {
+  transform: translateX(4px);
+}
+main .mainSliderContainer .swiperContainer .swiper .swiper-slide .contentWrap .textWrap a.btn-detail i {
+  color: rgb(176, 177, 181);
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 8px;
+  transition: all 0.7s;
+}
+@media (max-width: 767px) {
+  main .mainSliderContainer .swiperContainer .swiper .swiper-slide .contentWrap .textWrap a.btn-detail i {
+    display: none;
+  }
+}
+main .mainSliderContainer .swiperContainer .swiper-button-prev {
+  left: -30px;
+  width: 40px;
+  height: 40px;
+}
+main .mainSliderContainer .swiperContainer .swiper-button-prev::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+  transform: rotate(-45deg);
+}
+main .mainSliderContainer .swiperContainer .swiper-button-prev::after {
+  display: none;
+}
+main .mainSliderContainer .swiperContainer .swiper-button-next {
+  right: -30px;
+  width: 40px;
+  height: 40px;
+}
+main .mainSliderContainer .swiperContainer .swiper-button-next::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+  transform: rotate(45deg);
+}
+main .mainSliderContainer .swiperContainer .swiper-button-next::after {
+  display: none;
+}
+main .mainSliderContainer .swiperContainer .swiper-pagination {
+  position: static;
+  padding-top: 20px;
+}
+main .mainSliderContainer .swiperContainer .swiper-pagination .swiper-pagination-bullet {
+  background: #666;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  outline: 0;
+  border-radius: 5px;
+  opacity: 1;
+}
+main .mainSliderContainer .swiperContainer .swiper-pagination .swiper-pagination-bullet:hover {
+  background: #000;
+}
+main .mainSliderContainer .swiperContainer .swiper-pagination .swiper-pagination-bullet-active {
+  background: #000;
 }
