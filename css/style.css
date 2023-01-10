@@ -1,0 +1,16 @@
+body * {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.inner {
+  max-width: 1580px;
+  margin: 0 auto;
+}
+
+header .pcTopBanner {
+  text-align: center;
+  margin-top: 10px;
+}
+header .pcTopBanner img {
+  max-width: 701px;
+}
