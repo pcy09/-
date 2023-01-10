@@ -5,6 +5,16 @@
 	--p: #000;
 	--b: #6d7278;
 }
+body {
+	padding-top: 143px;
+}
+.scrollBar {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+	&::-webkit-scrollbar {
+		display: none; /* Chrome, Safari, Opera*/
+	}
+}
 body * {
 	font-family: "Noto Sans KR", sans-serif;
 	box-sizing: border-box;

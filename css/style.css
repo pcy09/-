@@ -6,6 +6,18 @@
   --b: #6d7278;
 }
 
+body {
+  padding-top: 143px;
+}
+
+.scrollBar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.scrollBar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
 body * {
   font-family: "Noto Sans KR", sans-serif;
   box-sizing: border-box;
@@ -44,7 +56,7 @@ header {
   z-index: 9999999999;
 }
 @media (min-width: 1023px) {
-  header {
+  header.scroll {
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.09);
   }
 }
@@ -63,6 +75,7 @@ header .inner {
   justify-content: space-between;
   align-items: flex-end;
   height: 77px;
+  padding: 0 24px;
 }
 header .inner h1.logo {
   width: 56vw;
@@ -233,6 +246,11 @@ header .inner nav .gnbSubMenuWrap .innerWrap .gnbSubBannerWrap ul.gnbSnsMenu li 
 header .inner nav:hover .gnbSubMenuWrap {
   display: block;
 }
+@media (max-width: 1023px) {
+  header .inner nav {
+    display: none;
+  }
+}
 header .inner .rightUtil {
   width: 25%;
   min-width: 246px;
@@ -243,6 +261,7 @@ header .inner .rightUtil {
 header .inner .rightUtil .searchWrap {
   width: 100%;
   position: relative;
+  height: 44px;
 }
 header .inner .rightUtil .searchWrap input {
   width: 100%;
@@ -265,6 +284,11 @@ header .inner .rightUtil .searchWrap input::placeholder {
   color: #8f9094;
   font-size: 16px;
   font-weight: 300;
+}
+@media (max-width: 1023px) {
+  header .inner .rightUtil .searchWrap input {
+    display: none;
+  }
 }
 header .inner .rightUtil .searchWrap i {
   position: absolute;
@@ -304,4 +328,130 @@ header .inner .rightUtil .lang ul li a:hover {
 header .inner .rightUtil .lang ul li.active a {
   color: #000;
   font-weight: 600;
+}
+header .inner .rightUtil .moGnbMenu a.ham {
+  display: flex;
+  align-items: center;
+  width: 25px;
+  height: 30px;
+  margin-left: 16px;
+  font-size: 0;
+}
+header .inner .rightUtil .moGnbMenu a.ham span {
+  position: relative;
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: #000;
+  transition: all 0.2s;
+}
+header .inner .rightUtil .moGnbMenu a.ham span::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background-color: #000;
+  transition: all 0.5s;
+}
+header .inner .rightUtil .moGnbMenu a.ham span::after {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: #000;
+  transition: all 0.5s;
+}
+header .inner .rightUtil .moGnbMenu a.ham.active span {
+  width: 0;
+}
+header .inner .rightUtil .moGnbMenu a.ham.active span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+header .inner .rightUtil .moGnbMenu a.ham.active span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+header .inner .rightUtil .moGnbMenu ul.moGnb {
+  position: fixed;
+  left: 0;
+  top: 143px;
+  width: 100%;
+  height: calc(100vh - 143px);
+  z-index: 98;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+header .inner .rightUtil .moGnbMenu ul.moGnb > li {
+  border-bottom: solid 1px rgba(255, 255, 255, 0.25);
+  position: relative;
+  padding: 18px 24px;
+  opacity: 0.7;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+  -moz-text-align-last: left;
+       text-align-last: left;
+}
+header .inner .rightUtil .moGnbMenu ul.moGnb > li i {
+  position: absolute;
+  top: 20.5px;
+  right: 24px;
+  color: #fff;
+  opacity: 0.7;
+  font-weight: 300;
+  font-size: 32px;
+}
+header .inner .rightUtil .moGnbMenu ul.moGnb > li span {
+  position: absolute;
+  right: 24px;
+  top: 18px;
+  width: 36px;
+  height: 36px;
+}
+header .inner .rightUtil .moGnbMenu ul.moGnb > li span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+header .inner .rightUtil .moGnbMenu ul.moGnb > li span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 20px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: all 0.2s;
+}
+header .inner .rightUtil .moGnbMenu ul.moGnb > li span.active::after {
+  transform: translate(-50%, -50%);
+}
+header .inner .rightUtil .moGnbMenu ul.moGnb > li a {
+  display: block;
+}
+header .inner .rightUtil .moGnbMenu ul.moGnb > li ul {
+  padding-top: 18px;
+}
+header .inner .rightUtil .moGnbMenu ul.moGnb > li ul li a {
+  padding: 0 24px;
+  margin-left: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 2.2;
+  color: #fff;
+}
+
+main {
+  padding-bottom: 1000px;
 }
