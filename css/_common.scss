@@ -1,6 +1,14 @@
+:root {
+	--t: #4747b3;
+	--s: #0072c6;
+	--c: #009a93;
+	--p: #000;
+	--b: #6d7278;
+}
 body * {
 	font-family: "Noto Sans KR", sans-serif;
 	box-sizing: border-box;
+	color: inherit;
 }
 a {
 	text-decoration: none;
