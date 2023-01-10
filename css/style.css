@@ -330,12 +330,17 @@ header .inner .rightUtil .lang ul li.active a {
   font-weight: 600;
 }
 header .inner .rightUtil .moGnbMenu a.ham {
-  display: flex;
+  display: none;
   align-items: center;
   width: 25px;
   height: 30px;
   margin-left: 16px;
   font-size: 0;
+}
+@media (max-width: 1023px) {
+  header .inner .rightUtil .moGnbMenu a.ham {
+    display: flex;
+  }
 }
 header .inner .rightUtil .moGnbMenu a.ham span {
   position: relative;
