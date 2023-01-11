@@ -19,11 +19,9 @@ function imgArr() {
 		array[i] = dataArr[i].img;
 	}
 }
+
 imgArr();
 preloading(array);
-// preloading([
-// 	"https://news.skhynix.co.kr/hubfs/B_NewsRoom/%ED%94%84%EB%A0%88%EC%8A%A4%EC%84%BC%ED%84%B0%281017%29/%EB%B3%B4%EB%8F%84%EC%9E%90%EB%A3%8C%281017%29/2022/0330_1/SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4-%EA%B3%BD%EB%85%B8%EC%A0%95-%EC%82%AC%EC%9E%A5_%EC%8D%B8%EB%84%A4%EC%9D%BC.jpg",
-// ]);
 
 function secondArticle() {
 	for (let i = 1; i < 5; i++) {
