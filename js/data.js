@@ -6,22 +6,22 @@ let thirdText = "";
 let fifthText = "";
 let array = [];
 
-// 이미지 미리 가져오기
-function preloading(imageArray) {
-	let n = imageArray.length;
-	for (let i = 0; i < n; i++) {
-		let img = new Image();
-		img.src = imageArray[i];
-	}
-}
-function imgArr() {
-	for (let i = 0; i < dataArr.length; i++) {
-		array[i] = dataArr[i].img;
-	}
-}
+// // 이미지 미리 가져오기
+// function preloading(imageArray) {
+// 	let n = imageArray.length;
+// 	for (let i = 0; i < n; i++) {
+// 		let img = new Image();
+// 		img.src = imageArray[i];
+// 	}
+// }
+// function imgArr() {
+// 	for (let i = 0; i < dataArr.length; i++) {
+// 		array[i] = dataArr[i].img;
+// 	}
+// }
 
-imgArr();
-preloading(array);
+// imgArr();
+// preloading(array);
 
 function secondArticle() {
 	for (let i = 1; i < 5; i++) {
