@@ -1243,7 +1243,212 @@ main section#mediaLibrary .inner .imgWrap h3 i {
   opacity: 0.5;
   margin-left: 12px;
 }
-
-footer {
-  padding: 200px;
+main section#subscribe {
+  padding: 70px 0;
+}
+main section#subscribe .inner {
+  margin: 0 auto;
+  max-width: 1194px;
+  padding: 0 24px;
+  box-sizing: content-box;
+}
+main section#subscribe .inner .subscribeTop {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-bottom: 1px solid #8f9094;
+  padding-bottom: 40px;
+}
+@media (max-width: 1023px) {
+  main section#subscribe .inner .subscribeTop {
+    border-bottom: 0;
+  }
+}
+@media (max-width: 767px) {
+  main section#subscribe .inner .subscribeTop {
+    flex-direction: column;
+  }
+}
+main section#subscribe .inner .subscribeTop h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #4d4e52;
+  line-height: 1.5;
+}
+@media (max-width: 767px) {
+  main section#subscribe .inner .subscribeTop h2 {
+    align-self: flex-start;
+    margin-bottom: 34px;
+  }
+}
+main section#subscribe .inner .subscribeTop a {
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 600;
+  height: 36px;
+  justify-content: center;
+  letter-spacing: normal;
+  line-height: 1.57;
+  text-align: center;
+  text-decoration: none;
+  width: 135px;
+}
+main section#subscribe .inner .contentWrap {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1023px) {
+  main section#subscribe .inner .contentWrap {
+    flex-direction: column-reverse;
+  }
+}
+main section#subscribe .inner .contentWrap .textWrap {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  max-width: 535px;
+  padding-right: 25px;
+  width: 50%;
+}
+@media (max-width: 1023px) {
+  main section#subscribe .inner .contentWrap .textWrap {
+    width: 100%;
+    padding-right: 0;
+    max-width: unset;
+  }
+}
+main section#subscribe .inner .contentWrap .textWrap h3 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 50px;
+  margin-top: 45px;
+  color: #4d4e52;
+  line-height: 1.5;
+}
+main section#subscribe .inner .contentWrap .textWrap form {
+  display: flex;
+}
+@media (max-width: 1023px) {
+  main section#subscribe .inner .contentWrap .textWrap form {
+    max-width: 610px;
+  }
+}
+@media (max-width: 767px) {
+  main section#subscribe .inner .contentWrap .textWrap form {
+    flex-wrap: wrap;
+  }
+}
+main section#subscribe .inner .contentWrap .textWrap form input {
+  background-color: #68696e;
+  border: 0;
+  border-radius: 0;
+  color: #fff;
+  flex: 1 0 120px;
+  font-size: 14px;
+  height: 36px;
+  line-height: 1.57;
+  max-width: 276px;
+  padding: 6px 9px 8px 11px;
+  width: 100%;
+  margin-right: 8px;
+}
+@media (max-width: 767px) {
+  main section#subscribe .inner .contentWrap .textWrap form input {
+    max-width: 100%;
+    width: 100%;
+    flex: auto;
+    margin-bottom: 6px;
+    margin-right: 0;
+  }
+}
+main section#subscribe .inner .contentWrap .textWrap form input::-moz-placeholder {
+  color: #b0b1b5;
+}
+main section#subscribe .inner .contentWrap .textWrap form input:-ms-input-placeholder {
+  color: #b0b1b5;
+}
+main section#subscribe .inner .contentWrap .textWrap form input::placeholder {
+  color: #b0b1b5;
+}
+main section#subscribe .inner .contentWrap .textWrap form input.submit {
+  display: inline-block;
+  width: 110px;
+  height: 36px;
+  background-color: #4d4e52;
+  padding: 0 25px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.57;
+  flex: 0;
+}
+@media (max-width: 767px) {
+  main section#subscribe .inner .contentWrap .textWrap form input.submit {
+    max-width: 100%;
+    width: 100%;
+    flex: auto;
+    margin-bottom: 6px;
+    margin-right: 0;
+  }
+}
+main section#subscribe .inner .contentWrap .textWrap p {
+  color: #b0b1b5;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.57;
+  margin-top: 14px;
+  max-width: 500px;
+}
+main section#subscribe .inner .contentWrap .textWrap p a {
+  text-decoration: underline;
+}
+main section#subscribe .inner .contentWrap .imgWrap {
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 1023px) {
+  main section#subscribe .inner .contentWrap .imgWrap {
+    height: calc(53vw - 48px);
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  main section#subscribe .inner .contentWrap .imgWrap {
+    min-height: 297px;
+  }
+}
+main section#subscribe .inner .contentWrap .imgWrap img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+main .topButton {
+  text-align: center;
+  margin: 60px 0;
+}
+main .topButton a {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .topButton a:hover i {
+  transform: translateY(-10px);
+}
+main .topButton a i {
+  font-size: 45px;
+  color: rgba(0, 0, 0, 0.85);
+  transition: all 0.7s;
 }

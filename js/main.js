@@ -35,3 +35,8 @@ $(window).resize(function () {
 		setTimeout(() => $(".progress span").addClass("pro-ani"), 0);
 	}
 });
+
+// 탑버튼 누르면 스르륵 올라가기
+$(".topButton a").click(function () {
+	$("html, body").animate({ scrollTop: 0 }, 400);
+});
