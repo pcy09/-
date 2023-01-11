@@ -1452,3 +1452,202 @@ main .topButton a i {
   color: rgba(0, 0, 0, 0.85);
   transition: all 0.7s;
 }
+
+footer {
+  background: #1e1e1e;
+  position: relative;
+  padding: 50px 0 26px;
+}
+@media (max-width: 1023px) {
+  footer {
+    padding: 12px 0 26px;
+  }
+}
+footer .inner {
+  padding: 0 24px;
+  box-sizing: content-box;
+  position: relative;
+  max-width: 1580px;
+  margin: 0 auto;
+}
+@media (max-width: 1023px) {
+  footer .inner {
+    padding: 0 50px;
+  }
+}
+footer .inner .footerLogo {
+  margin-top: 20px;
+  display: inline-block;
+}
+@media (max-width: 1023px) {
+  footer .inner .footerLogo {
+    display: block;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+}
+footer .inner .footerLogo img {
+  width: 95%;
+  height: 71px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 4px;
+}
+footer .inner .copyright {
+  color: #68696e;
+  display: block;
+  font-size: 12px;
+  padding-top: 14px;
+  text-align: left;
+  width: 100%;
+}
+@media (max-width: 1023px) {
+  footer .inner .copyright {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+footer .inner .bottomWrap {
+  position: absolute;
+  width: 50%;
+  bottom: 5px;
+  right: 24px;
+}
+@media (max-width: 1023px) {
+  footer .inner .bottomWrap {
+    position: static;
+    width: 100%;
+  }
+}
+footer .inner .bottomWrap ul.footerNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 60%;
+  min-width: 380px;
+  margin-top: -40px;
+  float: right;
+  z-index: 1;
+  position: relative;
+}
+@media (max-width: 1400px) {
+  footer .inner .bottomWrap ul.footerNav {
+    max-width: 80%;
+  }
+}
+@media (max-width: 1023px) {
+  footer .inner .bottomWrap ul.footerNav {
+    float: initial;
+    margin: 0 auto;
+    max-width: 470px;
+    min-width: 414px;
+  }
+}
+@media (max-width: 768px) {
+  footer .inner .bottomWrap ul.footerNav {
+    min-width: unset;
+  }
+}
+@media (max-width: 550px) {
+  footer .inner .bottomWrap ul.footerNav {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+footer .inner .bottomWrap ul.footerNav li a {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 2;
+  color: #bbb;
+}
+footer .inner .bottomWrap ul.footerNav .lang {
+  width: 32px;
+  position: relative;
+  margin-left: 16px;
+  margin-top: -2px;
+  cursor: pointer;
+}
+@media (max-width: 1023px) {
+  footer .inner .bottomWrap ul.footerNav .lang {
+    display: none;
+  }
+}
+footer .inner .bottomWrap ul.footerNav .lang ul {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 99;
+}
+footer .inner .bottomWrap ul.footerNav .lang ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 122px;
+  height: 39px;
+  border: solid 1px #dedede;
+  background-color: #fff;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #8f9094;
+}
+footer .inner .bottomWrap ul.footerNav .lang ul li a:hover {
+  color: #000;
+  font-weight: 600;
+}
+footer .inner .bottomWrap ul.footerNav .lang ul li.active a {
+  color: #000;
+  font-weight: 600;
+}
+footer .inner .bottomWrap ul.footerSns {
+  display: flex;
+  margin-top: 60px;
+  float: right;
+}
+@media (max-width: 1023px) {
+  footer .inner .bottomWrap ul.footerSns {
+    float: initial;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 60px;
+  }
+}
+footer .inner .bottomWrap ul.footerSns li a {
+  margin-left: 11px;
+}
+footer .inner .bottomWrap ul.footerSns li a i {
+  display: inline-block;
+  background-position: center;
+  background-size: cover;
+  width: 34px;
+  height: 34px;
+  margin-bottom: -5px;
+}
+footer .inner .bottomWrap ul.footerSns li a i.ic-sns-f {
+  background-image: url(//20028749.fs1.hubspotusercontent-na1.net/hubfs/20028749/raw_assets/public/hynixNewsRoom/codeFiles/images/icons/ic-sns-f.png);
+}
+footer .inner .bottomWrap ul.footerSns li a i.ic-sns-y {
+  background-image: url(//20028749.fs1.hubspotusercontent-na1.net/hubfs/20028749/raw_assets/public/hynixNewsRoom/codeFiles/images/icons/ic-sns-y.png);
+}
+footer .inner .bottomWrap ul.footerSns li a i.ic-sns-i {
+  background-image: url(//20028749.fs1.hubspotusercontent-na1.net/hubfs/20028749/raw_assets/public/hynixNewsRoom/codeFiles/images/icons/ic-sns-i.png);
+}
+footer .inner .bottomWrap ul.footerSns li a i.ic-sns-g {
+  background-image: url(//20028749.fs1.hubspotusercontent-na1.net/hubfs/20028749/raw_assets/public/hynixNewsRoom/codeFiles/images/icons/ic-sns-g.png);
+}
+footer .inner .bottomWrap ul.footerSns li a i.ic-sns-ch {
+  background-image: url(//20028749.fs1.hubspotusercontent-na1.net/hubfs/20028749/raw_assets/public/hynixNewsRoom/codeFiles/images/icons/ic-sns-ch.png);
+}
+footer .awardBox {
+  position: absolute;
+  right: 0;
+  top: 15%;
+  width: auto;
+}
+footer .awardBox a img {
+  height: 110px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 80px;
+}
