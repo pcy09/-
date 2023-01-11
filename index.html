@@ -36,6 +36,7 @@
 		<!-- script -->
 		<script defer src="js/header.js"></script>
 		<script defer src="js/main.js"></script>
+		<script defer type="module" src="js/data.js"></script>
 	</head>
 	<body>
 		<header>
@@ -397,8 +398,421 @@
 					<div class="swiper-pagination"></div>
 				</div>
 			</div>
+			<section id="mainContent">
+				<div class="inner">
+					<div class="menuWrap">
+						<ul class="category">
+							<li class="active"><a href="#">추천 글</a></li>
+							<li><a href="#">기술</a></li>
+							<li><a href="#">사람&문화</a></li>
+							<li><a href="#">지속가능경영</a></li>
+							<li><a href="#">보도자료</a></li>
+						</ul>
+						<div class="sort">
+							<label for="sortRecent" class="recent active">
+								<input type="checkbox" id="sortRecent" />
+								<i class="fa-regular fa-square-check nonChecked"></i>
+								<i class="fa-solid fa-square-check checked"></i>
+								최신
+							</label>
+							<label for="sortPopular" class="popular">
+								<input type="checkbox" id="sortPopular" />
+								<i class="fa-regular fa-square-check nonChecked"></i>
+								<i class="fa-solid fa-square-check checked"></i>
+								인기
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="contentWrap">
+					<div class="flexWrap">
+						<div class="firstContent">
+							<article>
+								<div class="imgWrap">
+									<a href="#">
+										<img
+											src="https://news.skhynix.co.kr/hubfs/01_WEBSITE_NewsRoom_Management/press_thumbnail/skh_news_thumb_c.png"
+											alt="이미지"
+										/>
+									</a>
+								</div>
+								<div class="textWrap">
+									<a href="#">
+										<p class="category">보도자료</p>
+									</a>
+									<a href="#">
+										<h2 class="title">
+											SK하이닉스, 업계 최초 지속가능연계채권 성공적 발행
+										</h2>
+										<p class="text">
+											· 글로벌 메모리 반도체 기업 최초로 ESG 목표 연계 채권
+											발행<br />
+											· 전사 탄소배출 감축 목표 달성 조건 붙여 기후변화 대응
+											의지 부각<br />
+											· 당초 목표액 크게 뛰어넘어 기대 이상 흥행<br />
+											· “반도체 업황 반등 기대감과 회사의 ESG 경영에 대한 투자자
+											공감”
+										</p>
+									</a>
+								</div>
+							</article>
+						</div>
+						<div class="secondContent">
+							<article>
+								<div class="imgWrap">
+									<a href="#">
+										<img
+											src="https://news.skhynix.co.kr/hubfs/A_Medialibrary/10_Newsroom%20Upload/2023/01%EC%9B%94/%EA%B0%80%EC%9A%B0%EC%8A%A4%EB%9E%A9%EC%8A%A4_%ED%8C%90%EC%98%B5%ED%85%8C%EC%8A%A4/%EC%8D%B8%EB%84%A4%EC%9D%BC_940X520%20_7%282%29.png"
+											alt="이미지"
+										/>
+									</a>
+								</div>
+								<div class="textWrap">
+									<a href="#">
+										<p class="category">기술</p>
+									</a>
+									<a href="#">
+										<h2 class="title">
+											SK하이닉스, 웨이퍼 제조 공정 결과 예측하는 AI 솔루션
+											‘Panoptes VM’ 도입, 양산 적용
+										</h2>
+									</a>
+								</div>
+							</article>
+							<article>
+								<div class="imgWrap">
+									<a href="#">
+										<img
+											src="https://news.skhynix.co.kr/hubfs/A_Medialibrary/10_Newsroom%20Upload/2023/01%EC%9B%94/%EA%B0%80%EC%9A%B0%EC%8A%A4%EB%9E%A9%EC%8A%A4_%ED%8C%90%EC%98%B5%ED%85%8C%EC%8A%A4/%EC%8D%B8%EB%84%A4%EC%9D%BC_940X520%20_7%282%29.png"
+											alt="이미지"
+										/>
+									</a>
+								</div>
+								<div class="textWrap">
+									<a href="#">
+										<p class="category">기술</p>
+									</a>
+									<a href="#">
+										<h2 class="title">
+											SK하이닉스, 웨이퍼 제조 공정 결과 예측하는 AI 솔루션
+											‘Panoptes VM’ 도입, 양산 적용
+										</h2>
+									</a>
+								</div>
+							</article>
+							<article>
+								<div class="imgWrap">
+									<a href="#">
+										<img
+											src="https://news.skhynix.co.kr/hubfs/A_Medialibrary/10_Newsroom%20Upload/2023/01%EC%9B%94/%EA%B0%80%EC%9A%B0%EC%8A%A4%EB%9E%A9%EC%8A%A4_%ED%8C%90%EC%98%B5%ED%85%8C%EC%8A%A4/%EC%8D%B8%EB%84%A4%EC%9D%BC_940X520%20_7%282%29.png"
+											alt="이미지"
+										/>
+									</a>
+								</div>
+								<div class="textWrap">
+									<a href="#">
+										<p class="category">기술</p>
+									</a>
+									<a href="#">
+										<h2 class="title">
+											SK하이닉스, 웨이퍼 제조 공정 결과 예측하는 AI 솔루션
+											‘Panoptes VM’ 도입, 양산 적용
+										</h2>
+									</a>
+								</div>
+							</article>
+							<article>
+								<div class="imgWrap">
+									<a href="#">
+										<img
+											src="https://news.skhynix.co.kr/hubfs/A_Medialibrary/10_Newsroom%20Upload/2023/01%EC%9B%94/%EA%B0%80%EC%9A%B0%EC%8A%A4%EB%9E%A9%EC%8A%A4_%ED%8C%90%EC%98%B5%ED%85%8C%EC%8A%A4/%EC%8D%B8%EB%84%A4%EC%9D%BC_940X520%20_7%282%29.png"
+											alt="이미지"
+										/>
+									</a>
+								</div>
+								<div class="textWrap">
+									<a href="#">
+										<p class="category">기술</p>
+									</a>
+									<a href="#">
+										<h2 class="title">
+											SK하이닉스, 웨이퍼 제조 공정 결과 예측하는 AI 솔루션
+											‘Panoptes VM’ 도입, 양산 적용
+										</h2>
+									</a>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="thirdContent">
+						<article>
+							<div class="imgWrap">
+								<a href="#">
+									<img
+										src="https://news.skhynix.co.kr/hubfs/A_Medialibrary/10_Newsroom%20Upload/2023/01%EC%9B%94/%EA%B0%80%EC%9A%B0%EC%8A%A4%EB%9E%A9%EC%8A%A4_%ED%8C%90%EC%98%B5%ED%85%8C%EC%8A%A4/%EC%8D%B8%EB%84%A4%EC%9D%BC_940X520%20_7%282%29.png"
+										alt="이미지"
+									/>
+								</a>
+							</div>
+							<div class="textWrap">
+								<a href="#">
+									<p class="category">기술</p>
+								</a>
+								<a href="#">
+									<h2 class="title">
+										SK하이닉스, 웨이퍼 제조 공정 결과 예측하는 AI 솔루션
+										‘Panoptes VM’ 도입, 양산 적용
+									</h2>
+								</a>
+							</div>
+						</article>
+						<article>
+							<div class="imgWrap">
+								<a href="#">
+									<img
+										src="https://news.skhynix.co.kr/hubfs/A_Medialibrary/10_Newsroom%20Upload/2023/01%EC%9B%94/%EA%B0%80%EC%9A%B0%EC%8A%A4%EB%9E%A9%EC%8A%A4_%ED%8C%90%EC%98%B5%ED%85%8C%EC%8A%A4/%EC%8D%B8%EB%84%A4%EC%9D%BC_940X520%20_7%282%29.png"
+										alt="이미지"
+									/>
+								</a>
+							</div>
+							<div class="textWrap">
+								<a href="#">
+									<p class="category">기술</p>
+								</a>
+								<a href="#">
+									<h2 class="title">
+										SK하이닉스, 웨이퍼 제조 공정 결과 예측하는 AI 솔루션
+										‘Panoptes VM’ 도입, 양산 적용
+									</h2>
+								</a>
+							</div>
+						</article>
+						<article>
+							<div class="imgWrap">
+								<a href="#">
+									<img
+										src="https://news.skhynix.co.kr/hubfs/A_Medialibrary/10_Newsroom%20Upload/2023/01%EC%9B%94/%EA%B0%80%EC%9A%B0%EC%8A%A4%EB%9E%A9%EC%8A%A4_%ED%8C%90%EC%98%B5%ED%85%8C%EC%8A%A4/%EC%8D%B8%EB%84%A4%EC%9D%BC_940X520%20_7%282%29.png"
+										alt="이미지"
+									/>
+								</a>
+							</div>
+							<div class="textWrap">
+								<a href="#">
+									<p class="category">기술</p>
+								</a>
+								<a href="#">
+									<h2 class="title">
+										SK하이닉스, 웨이퍼 제조 공정 결과 예측하는 AI 솔루션
+										‘Panoptes VM’ 도입, 양산 적용
+									</h2>
+								</a>
+							</div>
+						</article>
+						<article>
+							<div class="imgWrap">
+								<a href="#">
+									<img
+										src="https://news.skhynix.co.kr/hubfs/A_Medialibrary/10_Newsroom%20Upload/2023/01%EC%9B%94/%EA%B0%80%EC%9A%B0%EC%8A%A4%EB%9E%A9%EC%8A%A4_%ED%8C%90%EC%98%B5%ED%85%8C%EC%8A%A4/%EC%8D%B8%EB%84%A4%EC%9D%BC_940X520%20_7%282%29.png"
+										alt="이미지"
+									/>
+								</a>
+							</div>
+							<div class="textWrap">
+								<a href="#">
+									<p class="category">기술</p>
+								</a>
+								<a href="#">
+									<h2 class="title">
+										SK하이닉스, 웨이퍼 제조 공정 결과 예측하는 AI 솔루션
+										‘Panoptes VM’ 도입, 양산 적용
+									</h2>
+								</a>
+							</div>
+						</article>
+						<article>
+							<div class="imgWrap">
+								<a href="#">
+									<img
+										src="https://news.skhynix.co.kr/hubfs/A_Medialibrary/10_Newsroom%20Upload/2023/01%EC%9B%94/%EA%B0%80%EC%9A%B0%EC%8A%A4%EB%9E%A9%EC%8A%A4_%ED%8C%90%EC%98%B5%ED%85%8C%EC%8A%A4/%EC%8D%B8%EB%84%A4%EC%9D%BC_940X520%20_7%282%29.png"
+										alt="이미지"
+									/>
+								</a>
+							</div>
+							<div class="textWrap">
+								<a href="#">
+									<p class="category">기술</p>
+								</a>
+								<a href="#">
+									<h2 class="title">
+										SK하이닉스, 웨이퍼 제조 공정 결과 예측하는 AI 솔루션
+										‘Panoptes VM’ 도입, 양산 적용
+									</h2>
+								</a>
+							</div>
+						</article>
+						<article>
+							<div class="imgWrap">
+								<a href="#">
+									<img
+										src="https://news.skhynix.co.kr/hubfs/A_Medialibrary/10_Newsroom%20Upload/2023/01%EC%9B%94/%EA%B0%80%EC%9A%B0%EC%8A%A4%EB%9E%A9%EC%8A%A4_%ED%8C%90%EC%98%B5%ED%85%8C%EC%8A%A4/%EC%8D%B8%EB%84%A4%EC%9D%BC_940X520%20_7%282%29.png"
+										alt="이미지"
+									/>
+								</a>
+							</div>
+							<div class="textWrap">
+								<a href="#">
+									<p class="category">기술</p>
+								</a>
+								<a href="#">
+									<h2 class="title">
+										SK하이닉스, 웨이퍼 제조 공정 결과 예측하는 AI 솔루션
+										‘Panoptes VM’ 도입, 양산 적용
+									</h2>
+								</a>
+							</div>
+						</article>
+						<article>
+							<div class="imgWrap">
+								<a href="#">
+									<img
+										src="https://news.skhynix.co.kr/hubfs/A_Medialibrary/10_Newsroom%20Upload/2023/01%EC%9B%94/%EA%B0%80%EC%9A%B0%EC%8A%A4%EB%9E%A9%EC%8A%A4_%ED%8C%90%EC%98%B5%ED%85%8C%EC%8A%A4/%EC%8D%B8%EB%84%A4%EC%9D%BC_940X520%20_7%282%29.png"
+										alt="이미지"
+									/>
+								</a>
+							</div>
+							<div class="textWrap">
+								<a href="#">
+									<p class="category">기술</p>
+								</a>
+								<a href="#">
+									<h2 class="title">
+										SK하이닉스, 웨이퍼 제조 공정 결과 예측하는 AI 솔루션
+										‘Panoptes VM’ 도입, 양산 적용
+									</h2>
+								</a>
+							</div>
+						</article>
+						<article>
+							<div class="imgWrap">
+								<a href="#">
+									<img
+										src="https://news.skhynix.co.kr/hubfs/A_Medialibrary/10_Newsroom%20Upload/2023/01%EC%9B%94/%EA%B0%80%EC%9A%B0%EC%8A%A4%EB%9E%A9%EC%8A%A4_%ED%8C%90%EC%98%B5%ED%85%8C%EC%8A%A4/%EC%8D%B8%EB%84%A4%EC%9D%BC_940X520%20_7%282%29.png"
+										alt="이미지"
+									/>
+								</a>
+							</div>
+							<div class="textWrap">
+								<a href="#">
+									<p class="category">기술</p>
+								</a>
+								<a href="#">
+									<h2 class="title">
+										SK하이닉스, 웨이퍼 제조 공정 결과 예측하는 AI 솔루션
+										‘Panoptes VM’ 도입, 양산 적용
+									</h2>
+								</a>
+							</div>
+						</article>
+					</div>
+					<div class="flexWrap-2">
+						<div class="fourthContent">
+							<article>
+								<h2>
+									DRAM과 NAND라는 양 날개로<br />
+									지속적인 사업 성장을<br />
+									도모합니다
+								</h2>
+								<a href="#">
+									제품정보 더보기
+									<i>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+										>
+											<g fill="#fff" fill-rule="evenodd" fill-opacity="1">
+												<path
+													d="M14 14H2.08V2.08h5.29v1.199H3.279v9.522h9.522V8.71H14zM14 6.7h-1.199V3.28H9.38v-1.2H14z"
+												></path>
+												<path
+													d="m6.454 10.474-.848-.848 7.37-7.37.848.848z"
+												></path>
+											</g>
+										</svg>
+									</i>
+								</a>
+							</article>
+						</div>
+						<div class="fifthContent">
+							<article>
+								<div class="imgWrap">
+									<a href="#">
+										<img
+											src="https://news.skhynix.co.kr/hubfs/A_Medialibrary/10_Newsroom%20Upload/2023/01%EC%9B%94/%EA%B0%80%EC%9A%B0%EC%8A%A4%EB%9E%A9%EC%8A%A4_%ED%8C%90%EC%98%B5%ED%85%8C%EC%8A%A4/%EC%8D%B8%EB%84%A4%EC%9D%BC_940X520%20_7%282%29.png"
+											alt="이미지"
+										/>
+									</a>
+								</div>
+								<div class="textWrap">
+									<a href="#">
+										<p class="category">기술</p>
+									</a>
+									<a href="#">
+										<h2 class="title">
+											SK하이닉스, 웨이퍼 제조 공정 결과 예측하는 AI 솔루션
+											‘Panoptes VM’ 도입, 양산 적용
+										</h2>
+									</a>
+								</div>
+							</article>
+							<article>
+								<div class="imgWrap">
+									<a href="#">
+										<img
+											src="https://news.skhynix.co.kr/hubfs/A_Medialibrary/10_Newsroom%20Upload/2023/01%EC%9B%94/%EA%B0%80%EC%9A%B0%EC%8A%A4%EB%9E%A9%EC%8A%A4_%ED%8C%90%EC%98%B5%ED%85%8C%EC%8A%A4/%EC%8D%B8%EB%84%A4%EC%9D%BC_940X520%20_7%282%29.png"
+											alt="이미지"
+										/>
+									</a>
+								</div>
+								<div class="textWrap">
+									<a href="#">
+										<p class="category">기술</p>
+									</a>
+									<a href="#">
+										<h2 class="title">
+											SK하이닉스, 웨이퍼 제조 공정 결과 예측하는 AI 솔루션
+											‘Panoptes VM’ 도입, 양산 적용
+										</h2>
+									</a>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="card-more">
+					글 더보기
+					<i class="fa-solid fa-plus"></i>
+				</a>
+			</section>
+			<section id="mediaLibrary">
+				<div class="inner">
+					<h2>SK하이닉스의 다채로운 이미지와 영상을 소개합니다</h2>
+					<div class="imgWrap">
+						<img src="img/mediaLibrary.webp" alt="" />
+						<a href="#">
+							<h3>
+								미디어라이브러리
+								<i class="fa-solid fa-arrow-right-long"></i>
+							</h3>
+						</a>
+					</div>
+				</div>
+			</section>
 		</main>
-		<footer></footer>
+		<footer>
+			<div class="test">테스트1</div>
+			<div class="test">테스트2</div>
+		</footer>
 		<!-- swiper js -->
 		<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 	</body>
